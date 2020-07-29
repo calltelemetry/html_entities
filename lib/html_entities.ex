@@ -78,7 +78,6 @@ defmodule HtmlEntities do
     for <<x <- string>>, into: "" do
       case x do
         ?' -> "&apos;"
-        ?" -> "&quot;"
         ?& -> "&amp;"
         ?< -> "&lt;"
         ?> -> "&gt;"
